@@ -12,6 +12,8 @@ class Potato {
     // initalize some variables to be used in other functions
     this.doFill = true;
     this.doStroke = false;
+    this.textSize = 10;
+    this.font = "sans-serif";
   }
   
   noFill() {
@@ -64,8 +66,36 @@ class Potato {
     this.drawPath();
   }
   
+  font(font) {
+    // set the font to use
+    this.ctx.font = "" + this.textSize + "px " + font;
+    this.font = font;
+  }
+  
+  fontSize(s) {
+    // set the text size
+    this.ctx.font = "" + s + "px " + this.font;
+    this.textSize = s;
+  }
+  
   text(text,x,y) {
     // draw text
-    this.ctx.strokeText(text,x,y);
+    this.ctx.fillText(text,x,y);
+  }
+  
+  vector(x,y,z) {
+    // a 2d or 3d vector
+    return {x: x, y: y, z: z || undefined};
+  }
+  
+  shape(vertices) {
+    // create a shape from an array of vertices
+    this.ctx.beginPath();
+    this.ctx.moveTo(vertices[0].x,vertices[0].y);
+    for (let i = 1; i < vertices.length; i++) {
+      this.ctx.lineTo(vertices[i].x,vertices[i].y);
+    }
+    this.ctx.closePath();
+    this.drawPath();
   }
 }
