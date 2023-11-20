@@ -69,3 +69,41 @@ Draws text to the screen
 - string: string to write to the screen
 - x: The x cordinate to render the text at
 - y: The y cordinate to render the text at
+### `textSize(s)`:
+Updates the text size
+- s: The new text size to use (in px)
+### `font(f)`:
+Update the font
+- f: The new font to use. Use one of the following:
+* Serif:
+1. Times New Roman
+2. Georgia
+3. Garamond
+* Sans-serif:
+5. Arial
+6. Verdana
+7. Helvetica
+* Monospace:
+8. Courier New
+9. Lucida Console
+* Cursive:
+10. Monaco
+11. Brush Script MT
+12. Lucida Handwriting
+* Fantasy:
+13. Copperplate
+14. Papyrus
+### `vector(x,y,z)`:
+Returns a 2d or 3d vector.
+- x: The x position of the vector
+- y: The y position of the vector
+- z: (optional) The z position of the vector
+### `shape(vertices)`:
+Renders a 2d shape to the screen
+- vertices: An array of vectors specifying the vertices of the shape
+### `line(x1,y1,x2,y2)`:
+Renders a line to the screen
+- x1: The x position of the first point
+- y1: The y position of the first point
+- x2: The x position of the second point
+- y2: The y position of the second point
