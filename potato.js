@@ -98,4 +98,12 @@ class Potato {
     this.ctx.closePath();
     this.drawPath();
   }
+  
+  line(x1,y1,x2,y2) {
+    // draw a line
+    this.ctx.beginPath();
+    this.ctx.moveTo(x1,y1);
+    this.ctx.lineTo(x2,y2);
+    this.ctx.stroke();
+  }
 }
