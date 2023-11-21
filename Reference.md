@@ -75,22 +75,22 @@ Updates the text size
 ### `font(f)`:
 Update the font
 - f: The new font to use. Use one of the following:
-* Serif fonts:
+### Serif fonts:
 1. Times New Roman
 2. Georgia
 3. Garamond
-Sans-serif fonts:
+### Sans-serif fonts:
 5. Arial
 6. Verdana
 7. Helvetica
-Monospace fonts:
+### Monospace fonts:
 8. Courier New
 9. Lucida Console
-Cursive fonts:
+### Cursive fonts:
 10. Monaco
 11. Brush Script MT
 12. Lucida Handwriting
-Fantasy fonts:
+### Fantasy fonts:
 13. Copperplate
 14. Papyrus
 ### `vector(x,y,z)`:
