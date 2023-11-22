@@ -65,6 +65,14 @@ Renders a circle to the screen
 - x: The x cordnate to render the circle at
 - y: The y cordinate to render the circle at
 - r: The radius of the circle
+### `triangle(x1,y1,x2,y2,x3,y3)`:
+Renders a triangle to the screen
+- x1: The x cordinqte of the first point
+- y1: The y cordinqte of the first point
+- x2: The x cordinqte of the second point
+- y2: The y cordinqte of the second point
+- x3: The x cordinqte of the third point
+- y3: The y cordinqte of the third point
 ### `text(string,x,y)`:
 Draws text to the screen
 - string: string to write to the screen
