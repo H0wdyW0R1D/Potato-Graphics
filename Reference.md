@@ -3,8 +3,9 @@ This is a simple reference for the Potato-Graphics which will explain how to use
 
 ## Import the lirary
 1. Begin by copying the library into your code and referencing it in your HTML file with `<script src="potato.js"></script>`
-2. In your main file, you must create an instance of the Potato class with `let potato = new Potato();`
-3. That's it :)
+2. In your main js file, you must create an instance of the Potato class with `let potato = new Potato();`
+3. After referencing the js file in your html, write the keyword `defer`. This will cause the file to run after the DOM tree has loaded. E.g. `<script src="sketch.js" defer></script>`
+4. That's it :)
 
 ## Basic programming
 Whenever you want to use a function in Potato, you must begin it by referencing the potato variable that you initialized earlier. Begin by typing `potato.[insert function here]`
