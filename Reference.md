@@ -23,6 +23,14 @@ potato.fill("black");
 potato.circle(200,200,100);
 ```
 
+## Variables:
+### `canvas`:
+The HTML canvas element used for rendering. Incudes feilds like width, and height which can be accesed through dot notation. 
+E.g. `potato.rect(0,0,potato.canvas.width,potato.canvas.height);`
+This will render a rectangle the exact size of the canvas to the screen.
+### `deltaTime`:
+The number of milliseconds elasped since the last time `draw()` was called.
+
 ## List of functions:
 ### **`setup()`:**
 A function called once the potato class is initialized of the script. **Write your own code here!**
