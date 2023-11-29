@@ -15,7 +15,14 @@ class Potato {
       this.textSize = 10;
       this.font = "sans-serif";
 
-      // window.resizeTo(400,400);
+      // set initial start time to be used in the millis() function
+      this.s = (new Date()).getTime();
+
+      // run setup() and draw() functions
+      window.addEventListener("load", (event) => {
+        setup();
+      });;
+      setInterval(draw, 30);
     }
     
     resizeCanvas(w,h) {
@@ -132,5 +139,9 @@ class Potato {
 
     image(img,x,y,w,h) {
         this.ctx.drawImage(img,x,y,w,h);
+    }
+
+    millis() {
+      return (new Date()).getTime() - this.s;
     }
 }
