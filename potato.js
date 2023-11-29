@@ -17,12 +17,22 @@ class Potato {
 
       // set initial start time to be used in the millis() function
       this.s = (new Date()).getTime();
+      // last frame time, used to calculate deltaTime
+      this.lastFrame = this.s;
+
+      this.deltaTime = 0;
 
       // run setup() and draw() functions
       window.addEventListener("load", (event) => {
         setup();
       });;
-      setInterval(draw, 30);
+      setInterval(() => {
+        // get deltaTime and update lastFrame
+        // call draw
+        this.deltaTime = (new Date()).getTime() - this.lastFrame;
+        draw();
+        this.lastFrame = (new Date()).getTime();
+      }, 30);
     }
     
     resizeCanvas(w,h) {
