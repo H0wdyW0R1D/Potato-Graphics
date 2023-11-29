@@ -24,9 +24,12 @@ potato.circle(200,200,100);
 ```
 
 ## List of functions:
-
+### **`setup()`:**
+A function called once the potato class is initialized of the script. **Write your own code here!**
+### **`draw()`:**
+A function called once every frame (by default, is set to 30fps), used to render moving things to the canvas. **Write your own code here!**
 ### `fill(color)`:
-Sets the fill color and enables fill
+Sets the fill color and enables fill 
 ### `stroke(color)`:
 Sets the stroke color and enables the stroke
 - color: the new stroke color. This can be a hex code, or one of the following strings:
@@ -116,3 +119,5 @@ Renders a line to the screen
 - y1: The y position of the first point
 - x2: The x position of the second point
 - y2: The y position of the second point
+### `millis()`:
+Returns the number of milliseconds elapsed since the start of the program
