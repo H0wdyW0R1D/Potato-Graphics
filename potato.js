@@ -1,3 +1,10 @@
+function setup() {}
+function draw() {}
+
+var pressedKeys = {};
+window.onkeyup = function(e) { pressedKeys[e.keyCode] = false; }
+window.onkeydown = function(e) { pressedKeys[e.keyCode] = true; }
+
 class Potato {
     constructor() {
       // initialize the canvas
@@ -14,9 +21,10 @@ class Potato {
       this.doStroke = false;
       this.textSize = 10;
       this.font = "sans-serif";
-
+      
       // set initial start time to be used in the millis() function
       this.s = (new Date()).getTime();
+
       // last frame time, used to calculate deltaTime
       this.lastFrame = this.s;
 
@@ -90,6 +98,13 @@ class Potato {
       this.ctx.arc(x,y,r,0, 2 * Math.PI);
       this.drawPath();
     }
+
+    arc(x,y,r,start,end) {
+      // draw an arc
+      this.ctx.beginPath();
+      this.ctx.arc(x,y,r,start, end);
+      this.drawPath();
+    }
     
     font(font) {
       // set the font to use
@@ -153,5 +168,14 @@ class Potato {
 
     millis() {
       return (new Date()).getTime() - this.s;
+    }
+
+    keyIsDown(keyCode) {
+      let key = pressedKeys["" + keyCode];
+      if (key === undefined) {
+        return false;
+      } else {
+        return key;
+      }
     }
 }
