@@ -129,3 +129,6 @@ Renders a line to the screen
 - y2: The y position of the second point
 ### `millis()`:
 Returns the number of milliseconds elapsed since the start of the program
+### `keyIsDown(keyCode)`:
+Returns whether a key is down (true) or not (false).
+- keyCode: The keyCode of the key to check. Here is a useful wesite for this: [https://www.toptal.com/developers/keycode](url)
