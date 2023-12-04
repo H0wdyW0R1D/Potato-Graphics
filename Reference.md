@@ -1,7 +1,7 @@
 # Reference
 This is a simple reference for the Potato-Graphics which will explain how to use the library and list the various functions and properties of the library.
 
-## Import the lirary
+## Import the library
 1. Begin by copying the library into your code and referencing it in your HTML file with `<script src="potato.js"></script>`
 2. In your main js file, you must create an instance of the Potato class with `let potato = new Potato();`
 3. After referencing the js file in your html, write the keyword `defer`. This will cause the file to run after the DOM tree has loaded. E.g. `<script src="sketch.js" defer></script>`
