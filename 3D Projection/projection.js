@@ -18,7 +18,7 @@ function projectPoint(point,cam) {
     let d = p.vector(dx,dy,dz);
     
     if (dz < 0) {
-        // this point is behind the camera
+        // this point is behind where the projected screen is (points do not look right at this point)
         return false;
     }
 
