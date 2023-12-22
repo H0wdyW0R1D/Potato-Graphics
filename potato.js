@@ -156,6 +156,9 @@ class Potato {
       this.ctx.stroke();
     }
 
+    /**
+     * TODO: find a work around that allows an image to be rendered to the screen before DOM tree is loaded
+    */
     genImageFromSrc(src) {
         let img = document.createElement('img');
         img.src = src;
