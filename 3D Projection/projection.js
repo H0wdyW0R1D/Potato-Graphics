@@ -32,6 +32,7 @@ function projectPoint(point,cam) {
     return projection; // a 2d vector if on screen, otherwise, is just false
 }
 
+// The following code is rather messy, but gets the job done ;)
 function renderBoxes(boxesToRender) {
     let distances = [];
     // get the distances to the boxes
